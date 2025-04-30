@@ -25,9 +25,6 @@ This project automates the task report process using **Google Sheets** and **Goo
 
 The script runs daily to check for delayed tasks and sends an email listing them to the specified address.
 
-### Links
-- [GitHub Repository](https://github.com/YourUsername/task-report-automation)
-- [LinkedIn Post](#)
 
 ---
 
