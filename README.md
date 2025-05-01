@@ -1,32 +1,60 @@
-# Task Report Automation with Google Apps Script
+# Automating Task Reports
 
-This project automates the task report process using **Google Sheets** and **Google Apps Script**.
+This project automates the process of sending email reports for delayed tasks. It includes two main scripts:
 
-## Features
-- Identifies overdue tasks from a Google Sheet.
-- Sends daily email reports with the delayed tasks automatically.
-- Uses Google Apps Script triggers to run without manual execution.
-
-## Setup Instructions
-
-### 1. Create a Google Sheet with the following columns:
-- **Task** (Task name)
-- **Owner** (Task owner)
-- **Status** (Status of the task, e.g. In Progress, Completed)
-- **Due Date** (Date by which the task should be completed)
-
-### 2. Copy the script from `email_report.gs` into your Google Apps Script editor and connect it to your Google Sheet.
-
-### 3. Set up a time-driven trigger to send the email report automatically every day.
-
-### 4. Customize the script with your email details and Google Sheet ID.
-
-## How It Works
-
-The script runs daily to check for delayed tasks and sends an email listing them to the specified address.
-
+1. **Google Apps Script** for automating task reports via Google Sheets.
+2. **Python Script** for sending delayed task reports using Gmail SMTP.
 
 ---
 
-## License
-This project is licensed under the MIT License.
+### 1. **Google Apps Script**
+
+This script checks for delayed tasks in a Google Sheet and automatically sends an email with the details of those tasks.
+
+### 2. **Python Script**
+
+This script sends an email via Gmail with a list of delayed tasks. It uses Gmail's SMTP server and requires an app password for secure access.
+
+---
+
+### Setup Instructions
+
+1. **Google Apps Script:**
+   - Open your Google Sheets document.
+   - Go to **Extensions > Apps Script**.
+   - Paste the provided Google Apps Script code.
+   - Set up a trigger to run the script periodically (e.g., daily or weekly).
+
+2. **Python Script:**
+   - Install Python on your system.
+   - Make sure you have the necessary Python libraries installed: `smtplib`, `email`.
+   - Replace the email credentials in the script with your own.
+   - Run the Python script using a terminal or command line.
+
+---
+
+### Requirements
+
+- Google Apps Script: A Google Sheets account.
+- Python Script: A Gmail account with an **App Password** enabled for SMTP access.
+
+---
+
+### Benefits
+
+- Save time by automating task reports.
+- Improve team communication and task tracking.
+- Stay on top of delayed tasks with automatic notifications.
+
+---
+
+### Notes
+
+- Make sure to replace placeholder email addresses and passwords with your actual credentials.
+- Use **Google App Passwords** for better security when working with Gmail.
+
+---
+
+### Conclusion
+
+This project can help streamline your task reporting process by automating email notifications for delayed tasks, improving project visibility and efficiency.
