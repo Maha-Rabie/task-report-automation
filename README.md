@@ -333,7 +333,3 @@ Project Management Office
 - **The Apps Script version requires no credentials** — `MailApp` sends on behalf of the Google account that owns the script, with no passwords stored anywhere in the code.
 
 ---
-
-## License
-
-This project is part of the **Maha-Rabie** repository. See the root repository for license details.
